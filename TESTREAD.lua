@@ -470,14 +470,6 @@ function OrionLib:MakeWindow(WindowConfig)
 	local Loaded = false
 	local UIHidden = false
 
-	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or "TEST MAN"
-	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
-	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
-	WindowConfig.HidePremium = WindowConfig.HidePremium or false
-	if WindowConfig.IntroEnabled == nil then
-		WindowConfig.IntroEnabled = true
-	end
 
 	if WindowConfig.SaveConfig then
 		if not isfolder(WindowConfig.ConfigFolder) then
